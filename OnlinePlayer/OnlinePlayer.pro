@@ -51,12 +51,14 @@ INCLUDEPATH += \
         $$PWD/../QtAV/src/QtAV \
         $$PWD/../QtAV\src \
         $$PWD/../QtAV\widgets \
-        $$PWD/../QtAV\widgets\QtAVWidgets
+        $$PWD/../QtAV\widgets\QtAVWidgets \
+        $$PWD/../QtUtils\uibase
 
 # ***********************************************************
 # Win平台下配置
 # ***********************************************************
 win32 {
+    include($$PWD/../QtUtils/uibase/uibase.pri)
     contains(QT_ARCH, x86_64) {
         message("x64")
         # 输出目录
