@@ -1,8 +1,7 @@
 #include <QApplication>
 #include <QtAVWidgets>
 
-#include "mainwidget.h"
-#include "playerwindow.h"
+#include "playerwidget.h"
 #include "framelesswindowhelper/framelesswindowhelper.h"
 
 
@@ -11,9 +10,9 @@ int main(int argc, char *argv[])
     QtAV::Widgets::registerRenderers();
     QApplication a(argc, argv);
 
-    FramelessWindowHelper<PlayerWindow> player;
+    FramelessWindowHelper<PlayerWidget> player;
     player.setResizeable(false);
-    player.resize(800, 600);
+    player.setTitleHeight(player.height());
     player.show();
     return a.exec();
 }

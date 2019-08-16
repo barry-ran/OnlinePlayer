@@ -26,15 +26,13 @@ CONFIG += c++11
 
 SOURCES += \
         main.cpp \
-        mainwidget.cpp \
-        playerwindow.cpp
+        playerwidget.cpp
 
 HEADERS += \
-        mainwidget.h \
-        playerwindow.h
+        playerwidget.h
 
 FORMS += \
-        mainwidget.ui
+        playerwidget.ui
 
 # Default rules for deployment.
 qnx: target.path = /tmp/$${TARGET}/bin
