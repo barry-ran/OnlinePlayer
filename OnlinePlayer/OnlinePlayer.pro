@@ -127,3 +127,6 @@ linux {
         DESTDIR = $$PWD/../output/linux64/release
     }
 }
+
+RESOURCES += \
+    res.qrc

@@ -6,36 +6,226 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>800</width>
-    <height>600</height>
+    <width>700</width>
+    <height>500</height>
    </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>400</width>
+    <height>300</height>
+   </size>
   </property>
   <property name="windowTitle">
    <string>Form</string>
   </property>
   <property name="styleSheet">
-   <string notr="true">#PlayerWidget {
-background-color: #1E1E1E;
-}</string>
+   <string notr="true"/>
   </property>
-  <layout class="QVBoxLayout" name="rootVerticalLayout">
-   <property name="spacing">
-    <number>0</number>
+  <widget class="QWidget" name="controlWidget" native="true">
+   <property name="geometry">
+    <rect>
+     <x>40</x>
+     <y>50</y>
+     <width>441</width>
+     <height>75</height>
+    </rect>
    </property>
-   <property name="leftMargin">
-    <number>0</number>
+   <property name="styleSheet">
+    <string notr="true">QWidget#controlWidget {
+background-color: rgba(34, 34, 34, 180);
+border-radius: 8px;
+}
+
+QPushButton {
+border: none;
+}
+
+QPushButton:hover {
+background-color: rgb(23, 23, 23);
+}
+
+QPushButton:pressed {
+background-color: rgb(16, 16, 16);
+}
+
+#playBtn {
+border-radius: 18px;
+}
+
+#pauseBtn {
+border-radius: 18px;
+}
+
+#preBtn {
+border-radius: 13px;
+}
+
+#nextBtn {
+border-radius: 13px;
+}</string>
    </property>
-   <property name="topMargin">
-    <number>0</number>
-   </property>
-   <property name="rightMargin">
-    <number>0</number>
-   </property>
-   <property name="bottomMargin">
-    <number>0</number>
-   </property>
-  </layout>
+   <layout class="QGridLayout" name="gridLayout">
+    <property name="leftMargin">
+     <number>0</number>
+    </property>
+    <property name="topMargin">
+     <number>0</number>
+    </property>
+    <property name="rightMargin">
+     <number>0</number>
+    </property>
+    <property name="bottomMargin">
+     <number>0</number>
+    </property>
+    <item row="1" column="1">
+     <widget class="QPushButton" name="preBtn">
+      <property name="minimumSize">
+       <size>
+        <width>26</width>
+        <height>26</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>26</width>
+        <height>26</height>
+       </size>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="icon">
+       <iconset resource="res.qrc">
+        <normaloff>:/res/control/pre.svg</normaloff>:/res/control/pre.svg</iconset>
+      </property>
+     </widget>
+    </item>
+    <item row="1" column="0">
+     <spacer name="horizontalSpacer">
+      <property name="orientation">
+       <enum>Qt::Horizontal</enum>
+      </property>
+      <property name="sizeHint" stdset="0">
+       <size>
+        <width>40</width>
+        <height>20</height>
+       </size>
+      </property>
+     </spacer>
+    </item>
+    <item row="1" column="2">
+     <widget class="QPushButton" name="playBtn">
+      <property name="minimumSize">
+       <size>
+        <width>36</width>
+        <height>36</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>36</width>
+        <height>36</height>
+       </size>
+      </property>
+      <property name="styleSheet">
+       <string notr="true"/>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="icon">
+       <iconset resource="res.qrc">
+        <normaloff>:/res/control/play.svg</normaloff>:/res/control/play.svg</iconset>
+      </property>
+      <property name="iconSize">
+       <size>
+        <width>26</width>
+        <height>26</height>
+       </size>
+      </property>
+     </widget>
+    </item>
+    <item row="1" column="5">
+     <spacer name="horizontalSpacer_2">
+      <property name="orientation">
+       <enum>Qt::Horizontal</enum>
+      </property>
+      <property name="sizeHint" stdset="0">
+       <size>
+        <width>40</width>
+        <height>20</height>
+       </size>
+      </property>
+     </spacer>
+    </item>
+    <item row="1" column="3">
+     <widget class="QPushButton" name="pauseBtn">
+      <property name="minimumSize">
+       <size>
+        <width>36</width>
+        <height>36</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>36</width>
+        <height>36</height>
+       </size>
+      </property>
+      <property name="styleSheet">
+       <string notr="true"/>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="icon">
+       <iconset resource="res.qrc">
+        <normaloff>:/res/control/pause.svg</normaloff>:/res/control/pause.svg</iconset>
+      </property>
+      <property name="iconSize">
+       <size>
+        <width>26</width>
+        <height>26</height>
+       </size>
+      </property>
+     </widget>
+    </item>
+    <item row="1" column="4">
+     <widget class="QPushButton" name="nextBtn">
+      <property name="minimumSize">
+       <size>
+        <width>26</width>
+        <height>26</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>26</width>
+        <height>26</height>
+       </size>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="icon">
+       <iconset resource="res.qrc">
+        <normaloff>:/res/control/next.svg</normaloff>:/res/control/next.svg</iconset>
+      </property>
+     </widget>
+    </item>
+    <item row="0" column="0" colspan="6">
+     <widget class="QSlider" name="playSlider">
+      <property name="orientation">
+       <enum>Qt::Horizontal</enum>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
  </widget>
- <resources/>
+ <resources>
+  <include location="res.qrc"/>
+ </resources>
  <connections/>
 </ui>

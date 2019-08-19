@@ -16,6 +16,21 @@ public:
     explicit PlayerWidget(QWidget *parent = nullptr);
     ~PlayerWidget();
 
+protected:
+    void resizeEvent(QResizeEvent *event) override;
+
+    void updateControlPos();
+
+
+private slots:
+    void on_playBtn_clicked();
+
+    void on_pauseBtn_clicked();
+
+    void onVideoFrameSizeChanged();
+    void onBufferProgressChanged(qreal progress);
+    void onMediaStatusChanged(QtAV::MediaStatus status);
+
 private:
     Ui::PlayerWidget *ui;
 
