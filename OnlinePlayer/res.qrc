@@ -1,8 +1,10 @@
 <RCC>
     <qresource prefix="/">
-        <file>res/control/play.svg</file>
-        <file>res/control/pause.svg</file>
-        <file>res/control/next.svg</file>
-        <file>res/control/pre.svg</file>
+        <file>res/control/play-normal.png</file>
+        <file>res/control/pause-normal.png</file>
+        <file>res/control/next-normal.png</file>
+        <file>res/control/pre-normal.png</file>
+        <file>res/control/next-hover.png</file>
+        <file>res/control/pre-hover.png</file>
     </qresource>
 </RCC>

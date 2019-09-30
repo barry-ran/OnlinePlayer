@@ -11,7 +11,7 @@ int main(int argc, char *argv[])
     QApplication a(argc, argv);
 
     FramelessWindowHelper<PlayerWidget> player;
-    player.setTitleHeight(player.height());
+    player.setTitleHeight(0);
     player.show();
     return a.exec();
 }

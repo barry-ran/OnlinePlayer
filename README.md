@@ -37,3 +37,5 @@ make -j4
     - lib: QtAVd1.lib, QtAVWidgetsd1.lib
     - bin: QtAVd1.dll, QtAVWidgetsd1.dll
 
+# mark
+[图标](https://www.iconfont.cn/collections/detail?spm=a313x.7781069.0.da5a778a4&cid=567)
