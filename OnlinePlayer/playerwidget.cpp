@@ -39,8 +39,7 @@ PlayerWidget::PlayerWidget(QWidget *parent) :
     rootVerticalLayout->addWidget(m_vo->widget());
 
     ui->playBtn->show();
-    ui->pauseBtn->hide();
-    ui->playSlider->hide();
+    ui->pauseBtn->hide();    
 
     m_defaultSize = size();
     updateControlPos();
