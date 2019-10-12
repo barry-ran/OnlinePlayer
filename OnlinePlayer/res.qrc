@@ -6,5 +6,6 @@
         <file>res/control/pre-normal.png</file>
         <file>res/control/next-hover.png</file>
         <file>res/control/pre-hover.png</file>
+        <file>res/control/slider.png</file>
     </qresource>
 </RCC>
